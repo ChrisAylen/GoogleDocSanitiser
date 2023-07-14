@@ -24,7 +24,8 @@ pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-
 ## Configuration
 
 1. Save your Google API credentials in a `google-client.json` file in the project directory.
-2. Update the `config.json` file with your input and output folder IDs from Google Drive.
+2. Rename the `config_example.json` to `config.json`
+3. Update the `config.json` file with your input and output folder IDs from Google Drive.
 
 ## Usage
 
