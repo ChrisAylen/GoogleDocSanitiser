@@ -20,6 +20,32 @@ To install the prerequisites, run:
 
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib google-auth spacy
 
+#### Google Cloud Platform Configuration
+Before running the script, you need to create a project on Google Cloud Platform (GCP), enable necessary APIs for the project, and generate OAuth 2.0 credentials.
+
+#### Create a Google Cloud Project
+- Visit the Google Cloud Console at https://console.cloud.google.com/.
+If you have not created a project before, you might only see a button that says "Create Project". If you have created projects before, select the project dropdown and then click on "New Project".
+- Enter a project name and optionally edit the Project ID (you will need this later if you choose to enable APIs using the CLI).
+- Click "Create".
+#### Enable the Google Docs and Drive API
+- In the Google Cloud Console, select your project.
+- Navigate to the "Library" page using the left-side menu navigation.
+- In the "Library", search for "Google Docs API" and click on it. On the API page, click "Enable". Do the same for "Google Drive API".
+- Repeat the process for "Google Sheets API".
+#### Create OAuth 2.0 Credentials
+- Navigate to the "Credentials" page using the left-side menu navigation.
+- Click "Create Credentials" and select "OAuth client ID".
+- If you have not configured the OAuth consent screen before, you will be asked to do so. On the OAuth consent screen, only the "Application name" is required, and you can enter a name of your choice. Save the settings.
+- On the "Create OAuth client ID" page, select "Desktop app" for the Application type, and create a name.
+- Click "Create". Your Client ID and Client Secret will be displayed. Click "OK".
+- On the Credentials page, you will see the OAuth 2.0 Client IDs you just created. On the right side of the row, click the download icon to download your credentials in a JSON file.
+- Update Configuration
+- Rename the downloaded JSON file to google-client.json and place it in the project directory.
+
+These steps will get you set up with a GCP project and the necessary API credentials.
+
+Please note, this process is likely to change from time to time!
 
 ## Configuration
 
