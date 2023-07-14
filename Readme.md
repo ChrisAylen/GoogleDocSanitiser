@@ -2,9 +2,9 @@
 
 Google Docs Anonymizer is a Python application that processes all Google Docs files in a specified Google Drive folder, anonymizes personally identifiable information (PII) using Natural Language Processing, and stores the anonymized files in a separate folder.
 
-This process is not 100% effective!  You should check the results brfor relying on the output!
+This process is not 100% effective!  You should check the results before relying on the output!
 
-In addition, this code will create a correspoding Google Sheet for each document showing what was sanitsed and provide data to reverse the process should this be needed.  A use case for this might be sending some data for external analysis and de-obfuscating when the results are received back.
+In addition, this code will create a corresponding Google Sheet for each document showing what was sanitised and provide data to reverse the process should this be needed.  A use case for this might be sending some data for external analysis and de-obfuscating when the results are received back.
 
 ## Getting Started
 
@@ -63,7 +63,6 @@ Run the script using Python:
 
 python3 GoogleDocSanitise.py
 
-
 ## How It Works
 
 1. The script scans all files in the specified input folder on Google Drive.
@@ -78,3 +77,5 @@ This script is intended to work with English language documents and may not accu
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details
+
+
